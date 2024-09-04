@@ -40,9 +40,13 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -60,9 +64,9 @@
             this.textBox1.BackColor = System.Drawing.Color.AliceBlue;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.textBox1.Location = new System.Drawing.Point(37, 23);
+            this.textBox1.Location = new System.Drawing.Point(14, 23);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(241, 15);
+            this.textBox1.Size = new System.Drawing.Size(231, 15);
             this.textBox1.TabIndex = 3;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -85,9 +89,9 @@
             this.BTN_ENTRAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN_ENTRAR.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTN_ENTRAR.ForeColor = System.Drawing.Color.SeaShell;
-            this.BTN_ENTRAR.Location = new System.Drawing.Point(360, 313);
+            this.BTN_ENTRAR.Location = new System.Drawing.Point(360, 309);
             this.BTN_ENTRAR.Name = "BTN_ENTRAR";
-            this.BTN_ENTRAR.Size = new System.Drawing.Size(117, 32);
+            this.BTN_ENTRAR.Size = new System.Drawing.Size(117, 36);
             this.BTN_ENTRAR.TabIndex = 7;
             this.BTN_ENTRAR.Text = "Ingresar";
             this.BTN_ENTRAR.UseVisualStyleBackColor = false;
@@ -97,10 +101,10 @@
             this.textBox2.BackColor = System.Drawing.Color.AliceBlue;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.textBox2.Location = new System.Drawing.Point(37, 23);
+            this.textBox2.Location = new System.Drawing.Point(14, 25);
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '•';
-            this.textBox2.Size = new System.Drawing.Size(241, 15);
+            this.textBox2.Size = new System.Drawing.Size(231, 15);
             this.textBox2.TabIndex = 5;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
@@ -109,7 +113,7 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.BackColor = System.Drawing.Color.AliceBlue;
             this.checkBox1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.checkBox1.Location = new System.Drawing.Point(352, 261);
+            this.checkBox1.Location = new System.Drawing.Point(430, 259);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(133, 20);
             this.checkBox1.TabIndex = 6;
@@ -118,6 +122,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.pictureBox3);
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.ForeColor = System.Drawing.Color.MidnightBlue;
             this.groupBox1.Location = new System.Drawing.Point(274, 192);
@@ -129,6 +134,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.pictureBox2);
             this.groupBox2.Controls.Add(this.textBox1);
             this.groupBox2.Controls.Add(this.textBox3);
             this.groupBox2.ForeColor = System.Drawing.Color.MidnightBlue;
@@ -174,6 +180,26 @@
             this.label3.Text = "Contraseña";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(255, 17);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(23, 21);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 11;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(255, 19);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(23, 20);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 11;
+            this.pictureBox3.TabStop = false;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -198,6 +224,8 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -215,6 +243,8 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
 
