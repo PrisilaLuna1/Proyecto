@@ -46,5 +46,10 @@ namespace AAVD
         {
 
         }
+
+        private void uusuarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
