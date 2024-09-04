@@ -113,7 +113,7 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.BackColor = System.Drawing.Color.AliceBlue;
             this.checkBox1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.checkBox1.Location = new System.Drawing.Point(430, 259);
+            this.checkBox1.Location = new System.Drawing.Point(352, 263);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(133, 20);
             this.checkBox1.TabIndex = 6;
