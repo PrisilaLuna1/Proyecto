@@ -67,7 +67,7 @@
             this.textBox1.Location = new System.Drawing.Point(14, 23);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(231, 15);
-            this.textBox1.TabIndex = 3;
+            this.textBox1.TabIndex = 0;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
@@ -79,7 +79,7 @@
             this.label1.Location = new System.Drawing.Point(362, 53);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(113, 48);
-            this.label1.TabIndex = 0;
+            this.label1.TabIndex = 10;
             this.label1.Text = "Login";
             // 
             // BTN_ENTRAR
@@ -92,7 +92,7 @@
             this.BTN_ENTRAR.Location = new System.Drawing.Point(360, 309);
             this.BTN_ENTRAR.Name = "BTN_ENTRAR";
             this.BTN_ENTRAR.Size = new System.Drawing.Size(117, 36);
-            this.BTN_ENTRAR.TabIndex = 7;
+            this.BTN_ENTRAR.TabIndex = 3;
             this.BTN_ENTRAR.Text = "Ingresar";
             this.BTN_ENTRAR.UseVisualStyleBackColor = false;
             // 
@@ -101,11 +101,11 @@
             this.textBox2.BackColor = System.Drawing.Color.AliceBlue;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.textBox2.Location = new System.Drawing.Point(14, 25);
+            this.textBox2.Location = new System.Drawing.Point(14, 24);
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '•';
             this.textBox2.Size = new System.Drawing.Size(231, 15);
-            this.textBox2.TabIndex = 5;
+            this.textBox2.TabIndex = 1;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // checkBox1
@@ -116,7 +116,7 @@
             this.checkBox1.Location = new System.Drawing.Point(352, 263);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(133, 20);
-            this.checkBox1.TabIndex = 6;
+            this.checkBox1.TabIndex = 2;
             this.checkBox1.Text = "Recordar usuario";
             this.checkBox1.UseVisualStyleBackColor = false;
             // 
@@ -128,7 +128,7 @@
             this.groupBox1.Location = new System.Drawing.Point(274, 192);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(289, 51);
-            this.groupBox1.TabIndex = 9;
+            this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Contraseña";
             // 
@@ -141,7 +141,7 @@
             this.groupBox2.Location = new System.Drawing.Point(274, 125);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(289, 51);
-            this.groupBox2.TabIndex = 10;
+            this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Usuario";
             // 
@@ -163,7 +163,7 @@
             this.label2.Location = new System.Drawing.Point(12, 387);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(72, 22);
-            this.label2.TabIndex = 2;
+            this.label2.TabIndex = 11;
             this.label2.Text = "Usuario";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
@@ -176,7 +176,7 @@
             this.label3.Location = new System.Drawing.Point(12, 409);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(103, 22);
-            this.label3.TabIndex = 4;
+            this.label3.TabIndex = 12;
             this.label3.Text = "Contraseña";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
