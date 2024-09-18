@@ -12,6 +12,8 @@ namespace AAVD
 {
     public partial class Login : Form
     {
+        bool empleado=true;
+        bool gerente;
         public Login()
         {
             InitializeComponent();
@@ -49,7 +51,38 @@ namespace AAVD
 
         private void uusuarioToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            empleado = true;
+            gerente = false;
+            labelTitulo2.Text = "Ingresar como empleado";
+        }
 
+        private void BTN_ENTRAR_Click(object sender, EventArgs e)
+        {
+            if (empleado)
+            {
+                var nuevoForm = new GestionEmpleados();
+                nuevoForm.Show();
+            }
+            else if(gerente)
+            {
+                var nuevoForm = new GestionPuestos();
+                nuevoForm.Show();
+            }
+            //this.Close();
+        }
+
+        private void menuGerente_Click(object sender, EventArgs e)
+        {
+            gerente = true;
+            empleado = false;
+            
+            labelTitulo2.Text = "Ingresar como gerente";
+            
+        }
+
+        private void labelTitulo2_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

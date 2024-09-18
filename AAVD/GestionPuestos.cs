@@ -16,5 +16,29 @@ namespace AAVD
         {
             InitializeComponent();
         }
+
+        private void empleadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var nuevoForm = new GestionEmpleados();
+            nuevoForm.Show();
+        }
+
+        private void departamentosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var nuevoForm = new GestionDepartamentos();
+            nuevoForm.Show();
+        }
+
+        private void puestosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var nuevoForm = new GestionEmpleados();
+            nuevoForm.Show();
+        }
+
+        private void administrarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var nuevoForm = new Admin();
+            nuevoForm.Show();
+        }
     }
 }
