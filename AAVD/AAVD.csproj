@@ -47,11 +47,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DEPARTAMENTOS.cs">
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DEPARTAMENTOS.Designer.cs">
-      <DependentUpon>DEPARTAMENTOS.cs</DependentUpon>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionDepartamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionDepartamentos.Designer.cs">
+      <DependentUpon>GestionDepartamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionEmpleados.Designer.cs">
+      <DependentUpon>GestionEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionPuestos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionPuestos.Designer.cs">
+      <DependentUpon>GestionPuestos.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -61,6 +79,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionDepartamentos.resx">
+      <DependentUpon>GestionDepartamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionEmpleados.resx">
+      <DependentUpon>GestionEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionPuestos.resx">
+      <DependentUpon>GestionPuestos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>

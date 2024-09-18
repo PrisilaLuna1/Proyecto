@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AAVD
 {
-    public partial class DEPARTAMENTOS : Form
+    public partial class GestionPuestos : Form
     {
-        public DEPARTAMENTOS()
+        public GestionPuestos()
         {
             InitializeComponent();
         }
