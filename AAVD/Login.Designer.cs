@@ -256,6 +256,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Login";
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).EndInit();
             this.groupContrasena.ResumeLayout(false);
             this.groupContrasena.PerformLayout();

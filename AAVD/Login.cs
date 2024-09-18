@@ -8,11 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace AAVD
-{
+{       
     public partial class Login : Form
     {
-        bool empleado=true;
+        bool empleado = true;
         bool gerente;
         public Login()
         {
@@ -62,11 +63,13 @@ namespace AAVD
             {
                 var nuevoForm = new GestionEmpleados();
                 nuevoForm.Show();
+                this.Hide();
             }
             else if(gerente)
             {
                 var nuevoForm = new GestionPuestos();
                 nuevoForm.Show();
+                this.Hide();
             }
             //this.Close();
         }
@@ -83,6 +86,11 @@ namespace AAVD
         private void labelTitulo2_Click(object sender, EventArgs e)
         {
            
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

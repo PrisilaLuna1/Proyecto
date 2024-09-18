@@ -51,5 +51,10 @@ namespace AAVD
         {
 
         }
+
+        private void empleadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
+        }
     }
 }

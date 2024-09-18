@@ -21,24 +21,29 @@ namespace AAVD
         {
             var nuevoForm = new GestionEmpleados();
             nuevoForm.Show();
+            this.Close();
         }
 
         private void departamentosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var nuevoForm = new GestionDepartamentos();
             nuevoForm.Show();
+            this.Close();
         }
 
         private void puestosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var nuevoForm = new GestionEmpleados();
             nuevoForm.Show();
+            this.Close();
+            
         }
 
         private void administrarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var nuevoForm = new Admin();
+            var nuevoForm = new Administrador();
             nuevoForm.Show();
+            this.Close();
         }
     }
 }
