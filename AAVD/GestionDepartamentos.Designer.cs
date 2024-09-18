@@ -29,16 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GestionDepartamentos));
-            this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.DEPTO_RG = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,16 +40,11 @@
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.listBoxFiltroDep = new System.Windows.Forms.ListBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.button8 = new System.Windows.Forms.Button();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
@@ -72,12 +59,12 @@
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.listBox3 = new System.Windows.Forms.ListBox();
+            this.listBoxEmpPues = new System.Windows.Forms.ListBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.listBoxEmplDep = new System.Windows.Forms.ListBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -86,7 +73,21 @@
             this.puestosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.administrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBoxCuenta = new System.Windows.Forms.GroupBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.BTN_ANIOFILTRO = new System.Windows.Forms.Button();
+            this.BTN_MESFILTRO = new System.Windows.Forms.Button();
+            this.BTN_GENERARNOMINA = new System.Windows.Forms.Button();
+            this.BTN_GENERAR_NOMGRAL = new System.Windows.Forms.Button();
+            this.BTN_DEPTO = new System.Windows.Forms.Button();
+            this.BTN_PUESTOGRAL = new System.Windows.Forms.Button();
+            this.BTN_NOMBRE = new System.Windows.Forms.Button();
+            this.groupBoxOrdenar = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.BTN_ANIOFGRAL = new System.Windows.Forms.Button();
+            this.BTN_MESFGRAL = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -98,30 +99,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
+            this.groupBoxCuenta.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.groupBoxOrdenar.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label4.Location = new System.Drawing.Point(931, 50);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(54, 16);
-            this.label4.TabIndex = 19;
-            this.label4.Text = "Usuario";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.AliceBlue;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1008, 32);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(56, 53);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 18;
-            this.pictureBox1.TabStop = false;
             // 
             // tabControl1
             // 
@@ -129,107 +111,44 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Location = new System.Drawing.Point(16, 50);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(908, 519);
+            this.tabControl1.Size = new System.Drawing.Size(852, 519);
             this.tabControl1.TabIndex = 20;
             // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.tabPage1.Controls.Add(this.button10);
-            this.tabPage1.Controls.Add(this.button9);
-            this.tabPage1.Controls.Add(this.button7);
-            this.tabPage1.Controls.Add(this.button5);
-            this.tabPage1.Controls.Add(this.label5);
-            this.tabPage1.Controls.Add(this.button2);
+            this.tabPage1.Controls.Add(this.BTN_GENERAR_NOMGRAL);
             this.tabPage1.Controls.Add(this.groupBox1);
             this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Controls.Add(this.label28);
-            this.tabPage1.Controls.Add(this.button1);
+            this.tabPage1.Controls.Add(this.groupBoxOrdenar);
+            this.tabPage1.Controls.Add(this.groupBox3);
+            this.tabPage1.ForeColor = System.Drawing.Color.MidnightBlue;
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage1.Size = new System.Drawing.Size(900, 490);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPage1.Size = new System.Drawing.Size(844, 490);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Reporte general";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
-            // button10
-            // 
-            this.button10.Location = new System.Drawing.Point(664, 76);
-            this.button10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(100, 28);
-            this.button10.TabIndex = 26;
-            this.button10.Text = "Mes";
-            this.button10.UseVisualStyleBackColor = true;
-            // 
-            // button9
-            // 
-            this.button9.Location = new System.Drawing.Point(556, 76);
-            this.button9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(100, 28);
-            this.button9.TabIndex = 25;
-            this.button9.Text = "Año";
-            this.button9.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(329, 76);
-            this.button7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(100, 28);
-            this.button7.TabIndex = 24;
-            this.button7.Text = "Nombre";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(399, 432);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(100, 28);
-            this.button5.TabIndex = 23;
-            this.button5.Text = "Generar";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(477, 82);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 16);
-            this.label5.TabIndex = 21;
-            this.label5.Text = "Filtrar por:";
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(221, 76);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 28);
-            this.button2.TabIndex = 20;
-            this.button2.Text = "Puesto";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.DEPTO_RG);
-            this.groupBox1.Location = new System.Drawing.Point(12, 112);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Location = new System.Drawing.Point(8, 115);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Size = new System.Drawing.Size(865, 313);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(828, 318);
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
             // 
             // DEPTO_RG
             // 
+            this.DEPTO_RG.BackgroundColor = System.Drawing.Color.MidnightBlue;
             this.DEPTO_RG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DEPTO_RG.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -240,10 +159,10 @@
             this.Column6});
             this.DEPTO_RG.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DEPTO_RG.Location = new System.Drawing.Point(4, 19);
-            this.DEPTO_RG.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DEPTO_RG.Margin = new System.Windows.Forms.Padding(4);
             this.DEPTO_RG.Name = "DEPTO_RG";
             this.DEPTO_RG.RowHeadersWidth = 51;
-            this.DEPTO_RG.Size = new System.Drawing.Size(857, 290);
+            this.DEPTO_RG.Size = new System.Drawing.Size(820, 295);
             this.DEPTO_RG.TabIndex = 14;
             // 
             // Column1
@@ -291,101 +210,76 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(364, 22);
+            this.label1.Font = new System.Drawing.Font("Impact", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(15, 24);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(171, 16);
+            this.label1.Size = new System.Drawing.Size(203, 21);
             this.label1.TabIndex = 15;
-            this.label1.Text = "Reporte general de nomina";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(16, 82);
-            this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(82, 16);
-            this.label28.TabIndex = 13;
-            this.label28.Text = "Ordenar por:";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(113, 76);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 28);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Depto";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.label1.Text = "Reporte general de nómina";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.tabPage2.Controls.Add(this.listBox1);
+            this.tabPage2.Controls.Add(this.BTN_GENERARNOMINA);
+            this.tabPage2.Controls.Add(this.BTN_MESFILTRO);
+            this.tabPage2.Controls.Add(this.BTN_ANIOFILTRO);
+            this.tabPage2.Controls.Add(this.listBoxFiltroDep);
             this.tabPage2.Controls.Add(this.label7);
-            this.tabPage2.Controls.Add(this.button8);
             this.tabPage2.Controls.Add(this.dateTimePicker2);
             this.tabPage2.Controls.Add(this.label6);
-            this.tabPage2.Controls.Add(this.button6);
-            this.tabPage2.Controls.Add(this.button4);
             this.tabPage2.Controls.Add(this.label3);
             this.tabPage2.Controls.Add(this.groupBox2);
             this.tabPage2.Controls.Add(this.label2);
+            this.tabPage2.ForeColor = System.Drawing.Color.MidnightBlue;
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage2.Size = new System.Drawing.Size(900, 490);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPage2.Size = new System.Drawing.Size(844, 490);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Nominas";
             this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
-            // listBox1
+            // listBoxFiltroDep
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(648, 55);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(169, 116);
-            this.listBox1.TabIndex = 29;
+            this.listBoxFiltroDep.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.listBoxFiltroDep.FormattingEnabled = true;
+            this.listBoxFiltroDep.ItemHeight = 16;
+            this.listBoxFiltroDep.Location = new System.Drawing.Point(10, 66);
+            this.listBoxFiltroDep.Margin = new System.Windows.Forms.Padding(4);
+            this.listBoxFiltroDep.Name = "listBoxFiltroDep";
+            this.listBoxFiltroDep.Size = new System.Drawing.Size(163, 148);
+            this.listBoxFiltroDep.TabIndex = 29;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(644, 36);
+            this.label7.Location = new System.Drawing.Point(9, 47);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(166, 16);
             this.label7.TabIndex = 28;
             this.label7.Text = "Seleccionar departamento";
             // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(201, 133);
-            this.button8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(107, 28);
-            this.button8.TabIndex = 27;
-            this.button8.Text = "Mes";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
             // dateTimePicker2
             // 
+            this.dateTimePicker2.CalendarForeColor = System.Drawing.Color.MidnightBlue;
+            this.dateTimePicker2.CalendarTitleForeColor = System.Drawing.Color.MidnightBlue;
             this.dateTimePicker2.CustomFormat = "yyyy";
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker2.Location = new System.Drawing.Point(91, 85);
-            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePicker2.Location = new System.Drawing.Point(11, 280);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(176, 22);
+            this.dateTimePicker2.Size = new System.Drawing.Size(163, 22);
             this.dateTimePicker2.TabIndex = 26;
             this.dateTimePicker2.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(87, 62);
+            this.label6.Location = new System.Drawing.Point(9, 260);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(43, 16);
@@ -393,30 +287,10 @@
             this.label6.Text = "Filtrar:";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(400, 442);
-            this.button6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(100, 28);
-            this.button6.TabIndex = 24;
-            this.button6.Text = "Generar";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(87, 133);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(107, 28);
-            this.button4.TabIndex = 20;
-            this.button4.Text = "Año";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(85, 113);
+            this.label3.Location = new System.Drawing.Point(8, 317);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(82, 16);
@@ -426,16 +300,17 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.dataGridView2);
-            this.groupBox2.Location = new System.Drawing.Point(87, 169);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Location = new System.Drawing.Point(179, 43);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox2.Size = new System.Drawing.Size(732, 266);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Size = new System.Drawing.Size(657, 392);
             this.groupBox2.TabIndex = 17;
             this.groupBox2.TabStop = false;
             // 
             // dataGridView2
             // 
+            this.dataGridView2.BackgroundColor = System.Drawing.Color.MidnightBlue;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column7,
@@ -445,11 +320,12 @@
             this.Column11});
             this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView2.Location = new System.Drawing.Point(4, 19);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.Size = new System.Drawing.Size(724, 243);
+            this.dataGridView2.Size = new System.Drawing.Size(649, 369);
             this.dataGridView2.TabIndex = 0;
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
             // Column7
             // 
@@ -489,44 +365,47 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(336, 16);
+            this.label2.Font = new System.Drawing.Font("Impact", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(8, 13);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(232, 16);
+            this.label2.Size = new System.Drawing.Size(275, 21);
             this.label2.TabIndex = 16;
-            this.label2.Text = "Reporte de nomina por departamento";
+            this.label2.Text = "Reporte de nómina por departamento";
             // 
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.LightSteelBlue;
             this.tabPage3.Controls.Add(this.dataGridView3);
-            this.tabPage3.Controls.Add(this.listBox3);
+            this.tabPage3.Controls.Add(this.listBoxEmpPues);
             this.tabPage3.Controls.Add(this.label11);
             this.tabPage3.Controls.Add(this.label10);
             this.tabPage3.Controls.Add(this.label9);
             this.tabPage3.Controls.Add(this.label8);
-            this.tabPage3.Controls.Add(this.listBox2);
+            this.tabPage3.Controls.Add(this.listBoxEmplDep);
             this.tabPage3.Controls.Add(this.dataGridView1);
+            this.tabPage3.ForeColor = System.Drawing.Color.MidnightBlue;
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage3.Size = new System.Drawing.Size(900, 490);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPage3.Size = new System.Drawing.Size(844, 490);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Headcounter";
             // 
             // dataGridView3
             // 
+            this.dataGridView3.BackgroundColor = System.Drawing.Color.MidnightBlue;
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.Column13,
             this.dataGridViewTextBoxColumn2});
-            this.dataGridView3.Location = new System.Drawing.Point(372, 260);
-            this.dataGridView3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView3.Location = new System.Drawing.Point(387, 263);
+            this.dataGridView3.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.RowHeadersWidth = 51;
-            this.dataGridView3.Size = new System.Drawing.Size(457, 207);
+            this.dataGridView3.Size = new System.Drawing.Size(442, 207);
             this.dataGridView3.TabIndex = 7;
             // 
             // dataGridViewTextBoxColumn1
@@ -550,20 +429,21 @@
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.Width = 125;
             // 
-            // listBox3
+            // listBoxEmpPues
             // 
-            this.listBox3.FormattingEnabled = true;
-            this.listBox3.ItemHeight = 16;
-            this.listBox3.Location = new System.Drawing.Point(35, 308);
-            this.listBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(273, 148);
-            this.listBox3.TabIndex = 6;
+            this.listBoxEmpPues.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.listBoxEmpPues.FormattingEnabled = true;
+            this.listBoxEmpPues.ItemHeight = 16;
+            this.listBoxEmpPues.Location = new System.Drawing.Point(17, 322);
+            this.listBoxEmpPues.Margin = new System.Windows.Forms.Padding(4);
+            this.listBoxEmpPues.Name = "listBoxEmpPues";
+            this.listBoxEmpPues.Size = new System.Drawing.Size(273, 148);
+            this.listBoxEmpPues.TabIndex = 6;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(31, 288);
+            this.label11.Location = new System.Drawing.Point(14, 292);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(169, 16);
@@ -573,54 +453,58 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(31, 260);
+            this.label10.Font = new System.Drawing.Font("Impact", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(13, 260);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(291, 16);
+            this.label10.Size = new System.Drawing.Size(344, 21);
             this.label10.TabIndex = 4;
             this.label10.Text = "Empleados del departamento entre los puestos";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(31, 18);
+            this.label9.Font = new System.Drawing.Font("Impact", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(13, 18);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(270, 16);
+            this.label9.Size = new System.Drawing.Size(319, 21);
             this.label9.TabIndex = 3;
             this.label9.Text = "Empleados dentro del mismo departamento";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(31, 57);
+            this.label8.Location = new System.Drawing.Point(14, 50);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(169, 16);
             this.label8.TabIndex = 2;
             this.label8.Text = "Seleccionar departamento:";
             // 
-            // listBox2
+            // listBoxEmplDep
             // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 16;
-            this.listBox2.Location = new System.Drawing.Point(35, 76);
-            this.listBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(273, 148);
-            this.listBox2.TabIndex = 1;
+            this.listBoxEmplDep.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.listBoxEmplDep.FormattingEnabled = true;
+            this.listBoxEmplDep.ItemHeight = 16;
+            this.listBoxEmplDep.Location = new System.Drawing.Point(16, 77);
+            this.listBoxEmplDep.Margin = new System.Windows.Forms.Padding(4);
+            this.listBoxEmplDep.Name = "listBoxEmplDep";
+            this.listBoxEmplDep.Size = new System.Drawing.Size(273, 148);
+            this.listBoxEmplDep.TabIndex = 1;
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.MidnightBlue;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column12,
             this.Column14});
-            this.dataGridView1.Location = new System.Drawing.Point(372, 18);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Location = new System.Drawing.Point(387, 20);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(324, 207);
+            this.dataGridView1.Size = new System.Drawing.Size(442, 207);
             this.dataGridView1.TabIndex = 0;
             // 
             // Column12
@@ -687,21 +571,217 @@
             this.administrarToolStripMenuItem.Text = "Administrar";
             this.administrarToolStripMenuItem.Click += new System.EventHandler(this.administrarToolStripMenuItem_Click);
             // 
+            // groupBoxCuenta
+            // 
+            this.groupBoxCuenta.Controls.Add(this.label23);
+            this.groupBoxCuenta.Controls.Add(this.pictureBox2);
+            this.groupBoxCuenta.Controls.Add(this.label12);
+            this.groupBoxCuenta.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.groupBoxCuenta.Location = new System.Drawing.Point(877, 68);
+            this.groupBoxCuenta.Name = "groupBoxCuenta";
+            this.groupBoxCuenta.Size = new System.Drawing.Size(190, 86);
+            this.groupBoxCuenta.TabIndex = 67;
+            this.groupBoxCuenta.TabStop = false;
+            this.groupBoxCuenta.Text = "Cuenta";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.BackColor = System.Drawing.Color.Transparent;
+            this.label23.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label23.Location = new System.Drawing.Point(78, 50);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(57, 16);
+            this.label23.TabIndex = 22;
+            this.label23.Text = "User123";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.AliceBlue;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(6, 20);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(56, 53);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 20;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label12.Location = new System.Drawing.Point(78, 18);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(54, 16);
+            this.label12.TabIndex = 21;
+            this.label12.Text = "Usuario";
+            // 
+            // BTN_ANIOFILTRO
+            // 
+            this.BTN_ANIOFILTRO.BackColor = System.Drawing.Color.MidnightBlue;
+            this.BTN_ANIOFILTRO.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BTN_ANIOFILTRO.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BTN_ANIOFILTRO.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_ANIOFILTRO.ForeColor = System.Drawing.Color.SeaShell;
+            this.BTN_ANIOFILTRO.Location = new System.Drawing.Point(12, 345);
+            this.BTN_ANIOFILTRO.Name = "BTN_ANIOFILTRO";
+            this.BTN_ANIOFILTRO.Size = new System.Drawing.Size(160, 36);
+            this.BTN_ANIOFILTRO.TabIndex = 91;
+            this.BTN_ANIOFILTRO.Text = "Año";
+            this.BTN_ANIOFILTRO.UseVisualStyleBackColor = false;
+            // 
+            // BTN_MESFILTRO
+            // 
+            this.BTN_MESFILTRO.BackColor = System.Drawing.Color.MidnightBlue;
+            this.BTN_MESFILTRO.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BTN_MESFILTRO.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BTN_MESFILTRO.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_MESFILTRO.ForeColor = System.Drawing.Color.SeaShell;
+            this.BTN_MESFILTRO.Location = new System.Drawing.Point(12, 396);
+            this.BTN_MESFILTRO.Name = "BTN_MESFILTRO";
+            this.BTN_MESFILTRO.Size = new System.Drawing.Size(160, 36);
+            this.BTN_MESFILTRO.TabIndex = 92;
+            this.BTN_MESFILTRO.Text = "Mes";
+            this.BTN_MESFILTRO.UseVisualStyleBackColor = false;
+            // 
+            // BTN_GENERARNOMINA
+            // 
+            this.BTN_GENERARNOMINA.BackColor = System.Drawing.Color.MidnightBlue;
+            this.BTN_GENERARNOMINA.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BTN_GENERARNOMINA.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BTN_GENERARNOMINA.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_GENERARNOMINA.ForeColor = System.Drawing.Color.SeaShell;
+            this.BTN_GENERARNOMINA.Location = new System.Drawing.Point(730, 442);
+            this.BTN_GENERARNOMINA.Name = "BTN_GENERARNOMINA";
+            this.BTN_GENERARNOMINA.Size = new System.Drawing.Size(102, 36);
+            this.BTN_GENERARNOMINA.TabIndex = 93;
+            this.BTN_GENERARNOMINA.Text = "Generar";
+            this.BTN_GENERARNOMINA.UseVisualStyleBackColor = false;
+            // 
+            // BTN_GENERAR_NOMGRAL
+            // 
+            this.BTN_GENERAR_NOMGRAL.BackColor = System.Drawing.Color.MidnightBlue;
+            this.BTN_GENERAR_NOMGRAL.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BTN_GENERAR_NOMGRAL.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BTN_GENERAR_NOMGRAL.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_GENERAR_NOMGRAL.ForeColor = System.Drawing.Color.SeaShell;
+            this.BTN_GENERAR_NOMGRAL.Location = new System.Drawing.Point(730, 440);
+            this.BTN_GENERAR_NOMGRAL.Name = "BTN_GENERAR_NOMGRAL";
+            this.BTN_GENERAR_NOMGRAL.Size = new System.Drawing.Size(102, 36);
+            this.BTN_GENERAR_NOMGRAL.TabIndex = 94;
+            this.BTN_GENERAR_NOMGRAL.Text = "Generar";
+            this.BTN_GENERAR_NOMGRAL.UseVisualStyleBackColor = false;
+            // 
+            // BTN_DEPTO
+            // 
+            this.BTN_DEPTO.BackColor = System.Drawing.Color.MidnightBlue;
+            this.BTN_DEPTO.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BTN_DEPTO.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BTN_DEPTO.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_DEPTO.ForeColor = System.Drawing.Color.SeaShell;
+            this.BTN_DEPTO.Location = new System.Drawing.Point(90, 21);
+            this.BTN_DEPTO.Name = "BTN_DEPTO";
+            this.BTN_DEPTO.Size = new System.Drawing.Size(131, 36);
+            this.BTN_DEPTO.TabIndex = 95;
+            this.BTN_DEPTO.Text = "Departamento";
+            this.BTN_DEPTO.UseVisualStyleBackColor = false;
+            // 
+            // BTN_PUESTOGRAL
+            // 
+            this.BTN_PUESTOGRAL.BackColor = System.Drawing.Color.MidnightBlue;
+            this.BTN_PUESTOGRAL.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BTN_PUESTOGRAL.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BTN_PUESTOGRAL.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_PUESTOGRAL.ForeColor = System.Drawing.Color.SeaShell;
+            this.BTN_PUESTOGRAL.Location = new System.Drawing.Point(239, 21);
+            this.BTN_PUESTOGRAL.Name = "BTN_PUESTOGRAL";
+            this.BTN_PUESTOGRAL.Size = new System.Drawing.Size(102, 36);
+            this.BTN_PUESTOGRAL.TabIndex = 95;
+            this.BTN_PUESTOGRAL.Text = "Puesto";
+            this.BTN_PUESTOGRAL.UseVisualStyleBackColor = false;
+            // 
+            // BTN_NOMBRE
+            // 
+            this.BTN_NOMBRE.BackColor = System.Drawing.Color.MidnightBlue;
+            this.BTN_NOMBRE.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BTN_NOMBRE.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BTN_NOMBRE.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_NOMBRE.ForeColor = System.Drawing.Color.SeaShell;
+            this.BTN_NOMBRE.Location = new System.Drawing.Point(358, 21);
+            this.BTN_NOMBRE.Name = "BTN_NOMBRE";
+            this.BTN_NOMBRE.Size = new System.Drawing.Size(102, 36);
+            this.BTN_NOMBRE.TabIndex = 96;
+            this.BTN_NOMBRE.Text = "Nombre";
+            this.BTN_NOMBRE.UseVisualStyleBackColor = false;
+            // 
+            // groupBoxOrdenar
+            // 
+            this.groupBoxOrdenar.Controls.Add(this.BTN_NOMBRE);
+            this.groupBoxOrdenar.Controls.Add(this.BTN_DEPTO);
+            this.groupBoxOrdenar.Controls.Add(this.BTN_PUESTOGRAL);
+            this.groupBoxOrdenar.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.groupBoxOrdenar.Location = new System.Drawing.Point(9, 48);
+            this.groupBoxOrdenar.Name = "groupBoxOrdenar";
+            this.groupBoxOrdenar.Size = new System.Drawing.Size(475, 68);
+            this.groupBoxOrdenar.TabIndex = 68;
+            this.groupBoxOrdenar.TabStop = false;
+            this.groupBoxOrdenar.Text = "Ordenar por:";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.BTN_ANIOFGRAL);
+            this.groupBox3.Controls.Add(this.BTN_MESFGRAL);
+            this.groupBox3.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.groupBox3.Location = new System.Drawing.Point(490, 48);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(342, 68);
+            this.groupBox3.TabIndex = 97;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Filtrar por:";
+            // 
+            // BTN_ANIOFGRAL
+            // 
+            this.BTN_ANIOFGRAL.BackColor = System.Drawing.Color.MidnightBlue;
+            this.BTN_ANIOFGRAL.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BTN_ANIOFGRAL.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BTN_ANIOFGRAL.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_ANIOFGRAL.ForeColor = System.Drawing.Color.SeaShell;
+            this.BTN_ANIOFGRAL.Location = new System.Drawing.Point(223, 22);
+            this.BTN_ANIOFGRAL.Name = "BTN_ANIOFGRAL";
+            this.BTN_ANIOFGRAL.Size = new System.Drawing.Size(102, 36);
+            this.BTN_ANIOFGRAL.TabIndex = 96;
+            this.BTN_ANIOFGRAL.Text = "Año";
+            this.BTN_ANIOFGRAL.UseVisualStyleBackColor = false;
+            // 
+            // BTN_MESFGRAL
+            // 
+            this.BTN_MESFGRAL.BackColor = System.Drawing.Color.MidnightBlue;
+            this.BTN_MESFGRAL.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BTN_MESFGRAL.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BTN_MESFGRAL.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_MESFGRAL.ForeColor = System.Drawing.Color.SeaShell;
+            this.BTN_MESFGRAL.Location = new System.Drawing.Point(106, 22);
+            this.BTN_MESFGRAL.Name = "BTN_MESFGRAL";
+            this.BTN_MESFGRAL.Size = new System.Drawing.Size(102, 36);
+            this.BTN_MESFGRAL.TabIndex = 95;
+            this.BTN_MESFGRAL.Text = "Mes";
+            this.BTN_MESFGRAL.UseVisualStyleBackColor = false;
+            // 
             // GestionDepartamentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(1079, 585);
+            this.Controls.Add(this.groupBoxCuenta);
             this.Controls.Add(this.tabControl1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "GestionDepartamentos";
             this.Text = "Gestion de Departamentos";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -717,19 +797,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.groupBoxCuenta.ResumeLayout(false);
+            this.groupBoxCuenta.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.groupBoxOrdenar.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label28;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView DEPTO_RG;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
@@ -739,23 +820,14 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button9;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox listBoxFiltroDep;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
@@ -771,14 +843,29 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.ListBox listBox3;
+        private System.Windows.Forms.ListBox listBoxEmpPues;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.ListBox listBoxEmplDep;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
+        private System.Windows.Forms.GroupBox groupBoxCuenta;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button BTN_MESFILTRO;
+        private System.Windows.Forms.Button BTN_ANIOFILTRO;
+        private System.Windows.Forms.Button BTN_GENERARNOMINA;
+        private System.Windows.Forms.Button BTN_PUESTOGRAL;
+        private System.Windows.Forms.Button BTN_DEPTO;
+        private System.Windows.Forms.Button BTN_GENERAR_NOMGRAL;
+        private System.Windows.Forms.GroupBox groupBoxOrdenar;
+        private System.Windows.Forms.Button BTN_NOMBRE;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button BTN_ANIOFGRAL;
+        private System.Windows.Forms.Button BTN_MESFGRAL;
     }
 }

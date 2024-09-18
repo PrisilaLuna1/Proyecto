@@ -87,6 +87,7 @@
             this.labelTitulo1.Size = new System.Drawing.Size(214, 48);
             this.labelTitulo1.TabIndex = 10;
             this.labelTitulo1.Text = "Bienvenido";
+            this.labelTitulo1.Click += new System.EventHandler(this.labelTitulo1_Click);
             // 
             // BTN_ENTRAR
             // 

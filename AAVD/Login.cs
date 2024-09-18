@@ -67,7 +67,7 @@ namespace AAVD
             }
             else if(gerente)
             {
-                var nuevoForm = new GestionPuestos();
+                var nuevoForm = new GestionDepartamentos();
                 nuevoForm.Show();
                 this.Hide();
             }
@@ -89,6 +89,11 @@ namespace AAVD
         }
 
         private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelTitulo1_Click(object sender, EventArgs e)
         {
 
         }
